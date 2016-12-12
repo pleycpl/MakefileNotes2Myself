@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../include/library.h"
+#include "./include/library.h"
 
 int main(int argc, char const *argv[]) {
 	people h1;
