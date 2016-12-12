@@ -1,10 +1,10 @@
 
 all: main.o library.o
 	gcc -Wall main.o library.o -o result
-main.o: main.c ./include/library.h
+main.o: main.c ../include/library.h
 	gcc -Wall -c main.c -o main.o
-library.o: ./lib/library.c ./include/library.h
-	gcc -Wall -c ./lib/library.c -o library.o
+library.o: ../lib/library.c ../include/library.h
+	gcc -Wall -c ../lib/library.c -o library.o
 
 clean:
 	rm -rf *.o
